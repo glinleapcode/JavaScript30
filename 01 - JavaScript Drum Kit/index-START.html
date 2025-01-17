@@ -79,6 +79,9 @@
       // keys.forEach(key => key.addEventListener('transitionend', e => {
       //   // e.target.classList.remove('playing');
       // }))
+
+
+      keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     </script>
   </body>
 </html>
