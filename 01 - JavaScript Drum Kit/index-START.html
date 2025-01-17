@@ -70,7 +70,7 @@
 
       const keys = document.querySelectorAll('.key');
       keys.forEach(key => key.addEventListener('transitionend', e => {
-        this.classList.remove('playing');
+        e.target.classList.remove('playing');
 
       }))
     </script>
