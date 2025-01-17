@@ -68,9 +68,15 @@
         keyDiv.classList.add('playing');
       })
 
+      function removeTransition() {
+        this.classList.remove('playing');
+
+      }
+
       const keys = document.querySelectorAll('.key');
       keys.forEach(key => key.addEventListener('transitionend', e => {
-        e.target.classList.remove('playing');
+        // e.target.classList.remove('playing');
+        removeTransition
 
       }))
     </script>
