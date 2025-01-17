@@ -74,11 +74,11 @@
       }
 
       const keys = document.querySelectorAll('.key');
-      keys.forEach(key => key.addEventListener('transitionend', e => {
-        // e.target.classList.remove('playing');
-        removeTransition
 
-      }))
+      // without this
+      // keys.forEach(key => key.addEventListener('transitionend', e => {
+      //   // e.target.classList.remove('playing');
+      // }))
     </script>
   </body>
 </html>
