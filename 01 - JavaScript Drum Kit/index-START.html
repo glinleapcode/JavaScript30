@@ -65,6 +65,7 @@
         audio.play()
         let keyDiv = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         console.log(keyDiv);
+        keyDiv.classList.add('playing');
 
       })
     </script>
