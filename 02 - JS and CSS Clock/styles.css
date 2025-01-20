@@ -23,3 +23,8 @@ body {
   transform-origin: center bottom;
   background-color: #fff;
 }
+
+.hour {
+  width: 2px;
+  height: 60px;
+}
