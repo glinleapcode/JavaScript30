@@ -71,7 +71,13 @@
       const hours = now.getHours();
       const minutes = now.getMinutes();
       const seconds = now.getSeconds();
-      console.log(hours, minutes, seconds)
+      const hours_deg = (hours % 12) * 30
+      const minutes_deg = (minutes / 5) * 30
+      const seconds_deg = (seconds / 5) * 30
+      let hour_hand = document.querySelector(".hour-hand")
+      let minute_hand =document.querySelector(".min-hand")
+      let second_hand =document.querySelector(".second-hand")
+      hour_hand.style.transform = `rotate(${hours_deg}deg)`
     </script>
   </body>
 </html>
