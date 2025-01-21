@@ -63,24 +63,29 @@
         transform: rotate(90deg);
         transform-origin: 100%;
         transition: all 0.05s;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
       }
     </style>
 
-    <!-- <script>
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
-      const seconds = now.getSeconds();
-      const hours_deg = (hours % 12) * 30
-      const minutes_deg = (minutes / 5) * 30
-      const seconds_deg = (seconds / 5) * 30
-      let hour_hand = document.querySelector(".hour-hand")
-      let minute_hand =document.querySelector(".min-hand")
-      let second_hand =document.querySelector(".second-hand")
-      hour_hand.style.transform = `rotate(${hours_deg}deg)`
-      minute_hand.style.transform = `rotate(${minutes_deg}deg)`
-      second_hand.style.transform = `rotate(${seconds_deg}deg)`
-    </script> -->
+    <script>
+      function getCurrentTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const hours_deg = (hours % 12) * 30
+        const minutes_deg = (minutes / 5) * 30
+        const seconds_deg = (seconds / 5) * 30
+        let hour_hand = document.querySelector(".hour-hand")
+        let minute_hand =document.querySelector(".min-hand")
+        let second_hand =document.querySelector(".second-hand")
+        hour_hand.style.transform = `rotate(${hours_deg}deg)`
+        minute_hand.style.transform = `rotate(${minutes_deg}deg)`
+        second_hand.style.transform = `rotate(${seconds_deg}deg)`
+
+      }
+
+      setInterval(getCurrentTime, 1000);
+    </script>
   </body>
 </html>
